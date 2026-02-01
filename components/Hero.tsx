@@ -62,9 +62,9 @@ const Hero: React.FC = () => {
             </div>
             
             {/* Headline */}
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-display font-medium text-gray-900 leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-display font-medium text-gray-900 leading-[1.05] tracking-tight mb-8">
               Procurement, <br/>
-              <span className="font-serif-italic text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-azure-600 to-skin-500 animate-fade-in relative">
+              <span className="font-serif-italic text-gray-900 animate-fade-in relative">
                 Perfected
                 <span className="absolute -bottom-2 left-0 w-full h-2 bg-skin-200/50 rounded-full -rotate-1 skew-x-12"></span>
               </span>
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
             </h1>
             
             {/* Subheadline */}
-            <p className="text-xl text-gray-500 leading-relaxed max-w-lg mb-12 font-light">
+            <p className="text-lg sm:text-xl text-gray-500 leading-relaxed max-w-lg mb-12 font-light">
               The intelligent operating system for modern hospitals. Connect with verified suppliers, automate compliance, and cut procurement time by 70%.
             </p>
             
@@ -92,7 +92,10 @@ const Hero: React.FC = () => {
                <div className="flex -space-x-3 transition-all duration-300 group-hover:space-x-1">
                   {[1,2,3,4].map((i) => (
                     <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-100 overflow-hidden shadow-sm hover:scale-110 hover:z-10 transition-transform">
-                       <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="Admin" className="w-full h-full object-cover" />
+                       <svg className="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                         <circle cx="50" cy="40" r="20" fill="#cbd5e1" />
+                         <path d="M30,80 C30,70 40,60 50,60 C60,60 70,70 70,80 L60,80 C60,75 55,70 50,70 C45,70 40,75 40,80 Z" fill="#cbd5e1" />
+                       </svg>
                     </div>
                   ))}
                </div>

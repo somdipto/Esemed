@@ -94,7 +94,10 @@ const Features: React.FC = () => {
                             className="w-12 h-12 rounded-full border-4 border-gray-900 bg-gray-800 flex items-center justify-center text-xs overflow-hidden transition-transform duration-300 hover:scale-125 hover:z-20 hover:border-azure-500"
                             style={{ transitionDelay: `${i * 50}ms` }}
                          >
-                             <img src={`https://picsum.photos/50/50?random=${i+20}`} className="w-full h-full object-cover" alt="avatar" />
+                             <svg className="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                               <circle cx="50" cy="40" r="20" fill="#e2e8f0" />
+                               <path d="M30,80 C30,70 40,60 50,60 C60,60 70,70 70,80 L60,80 C60,75 55,70 50,70 C45,70 40,75 40,80 Z" fill="#e2e8f0" />
+                             </svg>
                          </div>
                      ))}
                      <div className="w-12 h-12 rounded-full border-4 border-gray-900 bg-azure-600 flex items-center justify-center text-xs font-bold z-10">
